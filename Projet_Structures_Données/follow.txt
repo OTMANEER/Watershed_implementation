@@ -1,0 +1,11 @@
+Compile wtth:  gcc -g  -Wall mon_prog.c lodepng.c  -o "name_of_executable"
+
+
+Check memory leaks:  valgrind --leak-check=full --show-leak-kinds=all ./"name_of_executable"
+
+
+
+Execution do not forget arguments and specify the location if the image is not present in the current directory where mon_prog is present:
+
+./"name_of_executable"  ./fichiers/Images/route.png ./fichiers/Images/route_marqueurs.png "name_of_Resul_Picture".png
+ 
